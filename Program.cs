@@ -1,10 +1,10 @@
 ﻿Console.WriteLine("Fluxograma da Engenharia");
 Console.WriteLine("A coisa está se movendo? [s] [n]");
-string escolha = Console.ReadLine()!;
+string escolha = Console.ReadLine()!.ToLower();
 if (escolha == "s")
 {
 Console.WriteLine("Deveria?");
-escolha = Console.ReadLine()!;
+escolha = Console.ReadLine()!.ToLower();
 if (escolha == "s")
 {
   Console.BackgroundColor = ConsoleColor.Green;
@@ -17,7 +17,7 @@ if (escolha == "s")
 }else if (escolha == "n")
 {
   Console.WriteLine("Deveria?");
-escolha = Console.ReadLine()!;
+escolha = Console.ReadLine()!.ToLower();
 if (escolha == "s")
 Console.WriteLine("Usa WD-40");
 else{
